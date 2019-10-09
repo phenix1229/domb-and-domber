@@ -18,6 +18,8 @@ function addImg(img, sourceStr){
     const img1 = document.createElement('img');
     img1.setAttribute('alt', img);
     img1.setAttribute('src', sourceStr);
+    img1.setAttribute('width', '250px');
+    return img1;
 }
 
 function assignClass(thing1, thing2){
@@ -37,3 +39,6 @@ function strIDColor(colorStr, idStr){
 appendToUl(makeNewLi('i am here'));
 appendToUl(makeNewLi('so am i'));
 appendToUl(makeNewLi('don\'t forget me'));
+
+appendToLorem(addImg('gh-logo', 'https://image.flaticon.com/icons/svg/25/25231.svg'))
+appendToLorem(addImg('ci-logo','https://www.multichannel.com/.image/t_share/MTU0MDYzODU3ODUyMDk4Mjk5/aws-logojpg.jpg'));
