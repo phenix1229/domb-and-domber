@@ -1,6 +1,6 @@
 function appendToUl(element){
-    const ul = document.querySelector('ul');
-    ul.appendChild(element);
+    const ul1 = document.querySelector('ul');
+    ul1.appendChild(element);
 }
 
 function appendToLorem(element){
@@ -11,11 +11,13 @@ function appendToLorem(element){
 function makeNewLi(newText){
     const newLi = document.createElement('li');
     newLi.innerText = newText;
-    // return liText
+    return newLi;
 }
 
-function appendImg(img, sourceStr){
-
+function addImg(img, sourceStr){
+    const img1 = document.createElement('img');
+    img1.setAttribute('alt', img);
+    img1.setAttribute('src', sourceStr);
 }
 
 function assignClass(thing1, thing2){
@@ -30,5 +32,8 @@ function strIDColor(colorStr, idStr){
 
 }
 
-text1 = makeNewLi('new li 1');
-appendToUl(text1);
+
+
+appendToUl(makeNewLi('i am here'));
+appendToUl(makeNewLi('so am i'));
+appendToUl(makeNewLi('don\'t forget me'));
